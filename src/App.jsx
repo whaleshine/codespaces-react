@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './App.css';
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
 }
 
 export default App;
-=======
 import React, { useReducer, useState } from "react";
 import { data } from "./data";
 
@@ -215,4 +213,3 @@ export default function App() {
     </div>
   );
 }
->>>>>>> 414979d (feat: initialize React project with Vite and Tailwind CSS)
