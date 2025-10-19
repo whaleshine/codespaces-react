@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GitHub Codespaces ♥️ React
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
@@ -68,3 +69,95 @@ This section has moved here: [https://vitejs.dev/guide/build.html](https://vitej
 ### Troubleshooting
 
 This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+=======
+// ...existing code...
+
+# Codespaces React — Product Listing Example
+
+A small React + Vite starter that demonstrates a product listing page with search, sort and filters. Uses Tailwind CSS for styling and Faker to generate demo data.
+
+## Key files & symbols
+
+- App and UI: [`App`](src/App.jsx) — main UI, reducer logic is defined there as [`reducer`](src/App.jsx) and [`initialState`](src/App.jsx).
+- Demo data: [`data`](src/data/index.js) — Faker-generated product list.
+- Entry: [`index.jsx`](src/index.jsx) and template [`index.html`](index.html).
+- Styles: [`index.css`](src/index.css) (Tailwind import).
+- Vite config & test runner: [`vite.config.js`](vite.config.js).
+- Tests: [`App.test.jsx`](src/App.test.jsx) and test setup [`setupTests.js`](src/setupTests.js).
+- Perf helper: [`reportWebVitals`](src/reportWebVitals.js).
+- PWA manifest & robots: [`public/manifest.json`](public/manifest.json), [`public/robots.txt`](public/robots.txt).
+- Dev container: [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json) (auto-starts the app and forwards port 3000).
+- VS Code launch: [.vscode/launch.json](.vscode/launch.json).
+- Project metadata: [`package.json`](package.json).
+- License: [LICENSE](LICENSE).
+
+## Features
+
+- Search by product name.
+- Sort by price (low → high, high → low).
+- Filters: in-stock only, fast delivery only.
+- Demo data seeded for deterministic results via Faker.
+
+## Local setup
+
+Prerequisites: Node.js (recommended via devcontainer if used).
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server (Vite) on port 3000:
+
+```bash
+npm start
+```
+
+Open the app in the host browser (from the devcontainer environment):
+
+```bash
+$BROWSER http://localhost:3000
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+Run tests (Vitest + Testing Library):
+
+```bash
+npm test
+```
+
+## Devcontainer behavior
+
+The devcontainer defined in [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json) runs `npm install` on update and forwards port 3000. It also opens `src/App.jsx` on start and attempts to start the app automatically.
+
+## Notes
+
+- Tailwind is included via [`index.css`](src/index.css) and the plugin in [`vite.config.js`](vite.config.js).
+- Faker seeding in [`src/data/index.js`](src/data/index.js) ensures reproducible demo data.
+- Tests use JSDOM as configured in [`vite.config.js`](vite.config.js).
+
+## Troubleshooting
+
+- If the dev server doesn't appear, confirm no process is already using port 3000.
+- If images from Faker fail to load, they are placeholder URLs; network restrictions may block them.
+
+## Contributing
+
+Small example — open a PR with improvements. Keep UI and reducer logic inside [`App`](src/App.jsx).
+
+## License
+
+This project is MIT licensed — see [LICENSE](LICENSE).
+>>>>>>> 414979d (feat: initialize React project with Vite and Tailwind CSS)

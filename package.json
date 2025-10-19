@@ -4,11 +4,20 @@
   "private": true,
   "type": "module",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@faker-js/faker": "^10.1.0",
+    "@tailwindcss/vite": "^4.1.14",
+>>>>>>> 414979d (feat: initialize React project with Vite and Tailwind CSS)
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+=======
+    "tailwindcss": "^4.1.14",
+>>>>>>> 414979d (feat: initialize React project with Vite and Tailwind CSS)
     "web-vitals": "^3.1.0"
   },
   "overrides": {
